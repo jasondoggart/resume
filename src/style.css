@@ -167,6 +167,13 @@ input {
   -webkit-transform: rotateY(180deg);
   width: 100%;
   height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.card-2 .card-front {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 
 :checked + .card-2 {
