@@ -133,6 +133,7 @@ let colors = {
   'primary': '#43458B',
   'logo-bright': '#7795F8',
   'my-yellow': '#FDD994',
+  'my-blue': '#7795F8',
 }
 
 module.exports = {

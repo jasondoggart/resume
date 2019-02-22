@@ -62,70 +62,42 @@
  */
 
 
-.picture {
-  width: 350px;
-  transform: skewY(10deg);
-  position: relative;
-  top: -25px;
-  left: -25px;
-}
-
-.picture-item {
-  width: 300px;
-  height: 300px;
-  transform: skewY(-10deg);
-  overflow: hidden;
-  box-sizing: border-box;
-  position: relative;
-  top: 0;
-  z-index: 2;
-}
-
-.picture-purple-stripe {
-  height: 30px;
-  width: 100%;
-  background-color: #43458B;
-  position: relative;
-  transform: skewY(-10deg);
-  position: relative;
-}
-
-.picture-blue-stripe {
-  height: 30px;
-  width: 100%;
-  background-color: #FDD994;
-  position: relative;
-  transform: skewY(-10deg);
-  position: relative;
-}
 
 .card-top-purple {
-  height: 200px;
+  height: 150px;
   background-color: #43458B;
 }
 
 .card-top-yellow {
-  height: 200px;
+  height: 150px;
   background-color: #FDD994;
+}
+
+.card-top-blue {
+  height: 150px;
+  background-color: #C4F0FF;
 }
 
 .card-top-angle {
   position: relative;
   left: 0;
-  top: 140px;
+  top: 110px;
   height: 90px;
   background-color: white;
   transform: skewY(-10deg);
 }
 
 .logo {
-  z-index: 2;
-  position: relative;
-  left: 110px;
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
   background-color: white;
-  top: -100px;
+  margin-top: -55px;
+}
+
+.logo-back {
+  width: 50px;
+  height: 50px;
+  background-color: white;
 }
 
 .card {
@@ -154,4 +126,54 @@
 
 .strengths-content {
   transform: skewY(10deg);
+}
+
+label {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  display: block;
+  width: 300px;
+  height: 430px;
+  cursor: pointer;
+}
+
+input {
+  display: none;
+}
+
+label:hover .card-2 {
+  transform: rotateY(10deg);
+}
+
+.card-2 {
+  transform-style: preserve-3d;
+  transition: all 600ms;
+  z-index: 20;
+  width: 100%;
+  height: 100%;
+}
+
+.card-2 .card-div {
+  position: absolute;
+  backface-visibility: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.card-2 .card-back {
+  transform: rotateY(180deg);
+  width: 100%;
+  height: 100%;
+}
+
+:checked + .card-2 {
+  transform: rotateY(180deg);
+}
+
+:checked + .logo {
+  opacity: 0;
+}
+
+label:hover :checked + .card-2 {
+  transform: rotateY(160deg);
 }
