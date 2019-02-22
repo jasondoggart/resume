@@ -60,3 +60,98 @@
  * @import "utilities/background-patterns";
  * @import "utilities/skew-transforms";
  */
+
+
+.picture {
+  width: 350px;
+  transform: skewY(10deg);
+  position: relative;
+  top: -25px;
+  left: -25px;
+}
+
+.picture-item {
+  width: 300px;
+  height: 300px;
+  transform: skewY(-10deg);
+  overflow: hidden;
+  box-sizing: border-box;
+  position: relative;
+  top: 0;
+  z-index: 2;
+}
+
+.picture-purple-stripe {
+  height: 30px;
+  width: 600px;
+  background-color: #43458B;
+  position: relative;
+  transform: skewY(-10deg);
+  position: relative;
+}
+
+.picture-blue-stripe {
+  height: 30px;
+  width: 600px;
+  background-color: #FDD994;
+  position: relative;
+  transform: skewY(-10deg);
+  position: relative;
+}
+
+.card-top-purple {
+  height: 200px;
+  background-color: #43458B;
+}
+
+.card-top-yellow {
+  height: 200px;
+  background-color: #FDD994;
+}
+
+.card-top-angle {
+  position: relative;
+  left: 0;
+  top: 140px;
+  height: 90px;
+  background-color: white;
+  transform: skewY(-10deg);
+}
+
+.logo {
+  z-index: 2;
+  position: relative;
+  left: 110px;
+  width: 80px;
+  height: 80px;
+  background-color: white;
+  top: -100px;
+}
+
+.card {
+  width: 300px;
+}
+
+.card-heading {
+  position: relative;
+  top: -80px;
+}
+
+.card-text {
+  position: relative;
+  top: -80px;
+}
+
+.card-action {
+  position: relative;
+  top: -60px;
+}
+
+.strengths-background {
+  transform: skewY(-10deg);
+  background: linear-gradient(#43458B,#7795F8 60%);
+}
+
+.strengths-content {
+  transform: skewY(10deg);
+}
