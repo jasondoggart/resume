@@ -83,7 +83,7 @@
 
 .picture-purple-stripe {
   height: 30px;
-  width: 600px;
+  width: 100%;
   background-color: #43458B;
   position: relative;
   transform: skewY(-10deg);
@@ -92,7 +92,7 @@
 
 .picture-blue-stripe {
   height: 30px;
-  width: 600px;
+  width: 100%;
   background-color: #FDD994;
   position: relative;
   transform: skewY(-10deg);
